@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1Learns.getIncident">
+      <class name="Runner.TestRunner">
         <methods>
-          <include name="getAllIncidents"/>
-          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Day1Learns.getIncident -->
-      <class name="Day1Learns.createInc">
-        <methods>
-          <include name="create"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- Day1Learns.createInc -->
+      </class> <!-- Runner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,6 @@ public class BaseClass {
 
     @BeforeMethod
     public void setup(){
-
         RestAssured.baseURI = "https://dev205639.service-now.com/api/now/table/";
         RestAssured.authentication = RestAssured.basic("admin", "YoD55g@uwL!W");
     }
