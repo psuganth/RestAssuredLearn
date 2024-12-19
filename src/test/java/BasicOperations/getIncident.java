@@ -1,4 +1,4 @@
-package Day1Learns;
+package BasicOperations;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 import UsableFiles.BaseClass;

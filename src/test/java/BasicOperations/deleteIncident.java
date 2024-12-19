@@ -1,4 +1,4 @@
-package Day1Learns;
+package BasicOperations;
 
 import UsableFiles.BaseClass;
 import org.testng.annotations.Test;

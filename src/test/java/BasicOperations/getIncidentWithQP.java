@@ -1,4 +1,4 @@
-package Day1Learns;
+package BasicOperations;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
