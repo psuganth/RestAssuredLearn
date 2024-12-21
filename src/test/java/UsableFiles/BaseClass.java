@@ -1,7 +1,10 @@
 package UsableFiles;
 
-import io.restassured.RestAssured;
 import org.testng.annotations.BeforeMethod;
+
+import io.cucumber.java.Before;
+import io.restassured.RestAssured;
+
 
 public class BaseClass {
     public static String sysID;

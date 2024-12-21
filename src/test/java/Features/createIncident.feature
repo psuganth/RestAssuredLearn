@@ -9,13 +9,14 @@
 @tag
 Feature: Incident Management
 	Background:
-		Given Set the endpoint
-    And Set the authentication
+		#Given Set the endpoint
+    #And Set the authentication
   @tag1
   Scenario: Get all incidents
     When Get all the incidents
     Then Validate the response code 200
     
+    @TestCase2
   Scenario: Create an incident
     When create the incident with body '{"description":"Some Issue 3 update","short_description":"Big issue 3 update"}'
     Then Validate the response code 201
@@ -28,6 +29,16 @@ Feature: Incident Management
   	|fileName|
   	|createIncident.json|
   	|createIncident2.json|
+  	
+  	
+  Scenario Outline: Update the created incident
+  	#When the incident is created verify with sysID
+  	Then update the incident with the new '<Description>' and '<Short Description>'
+  	And verify the updated '<Description>' and '<Short Description>'
+  	Examples:
+  	|Description|Short Description|
+  	|New Carry on Issue|Not a good movie|
+  	|Sikkandar ka muqqadar|worst movie|
 
   #@tag2
   #Scenario Outline: Title of your scenario outline
